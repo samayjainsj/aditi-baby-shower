@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Link previews (WhatsApp, iMessage) read these tags, not content.js -->
+  <title>Celebrating Aditi, Samay &amp; Baby</title>
+  <meta name="description" content="Join us for Aditi's baby shower on 11 November 2026 at Algoja Resort, Bundi.">
+  <meta property="og:title" content="Celebrating Aditi, Samay &amp; Baby">
+  <meta property="og:description" content="Join us for Aditi's baby shower on 11 November 2026 at Algoja Resort, Bundi.">
+  <meta property="og:type" content="website">
+  <meta name="apple-mobile-web-app-title" content="Aditi &amp; Samay Are Expecting">
+  <meta name="theme-color" content="#f3e9d8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Fredoka:wght@500;600;700&family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Opening: tap the toy blocks to topple them -->
+  <div class="gate" id="gate">
+    <div class="gate__text">
+      <p class="eyebrow" data-text="gate.eyebrow"></p>
+      <p class="gate__names" data-text="parents"></p>
+      <p class="gate__hint" data-text="gate.hint"></p>
+    </div>
+    <button class="gate__blocks" id="gate-button" type="button"
+            aria-label="Topple the blocks to open the invitation"></button>
+    <div class="gate__ledge" aria-hidden="true"></div>
+  </div>
+
+  <div class="leaves" id="leaves" aria-hidden="true"></div>
+
+  <main class="page" id="page" inert>
+    <section class="hero" aria-labelledby="hero-names">
+      <div class="hero__sprig hero__sprig--left" data-art="sprig"></div>
+      <div class="hero__sprig hero__sprig--right" data-art="sprig"></div>
+      <p class="hero__header" data-text="hero.headerText" lang="hi"></p>
+      <p class="script hero__subtitle" data-text="hero.subtitle"></p>
+      <p class="hero__line" data-text="hero.invitationLine"></p>
+      <h1 class="hero__names" id="hero-names" data-text="parents" tabindex="-1"></h1>
+      <p class="pill">
+        <span data-art="icon:clock"></span>
+        <span data-text="hero.dueLabel"></span>
+      </p>
+      <p class="hero__when">
+        <span><span data-art="icon:calendar"></span><span data-format="longDate"></span></span>
+        <span><span data-art="icon:clock"></span><span data-format="time"></span></span>
+      </p>
+      <p class="eyebrow hero__host" data-text="hero.hostedBy"></p>
+      <div class="hero__hedge" data-art="hedge" data-reveal></div>
+    </section>
+
+    <section class="section" aria-labelledby="countdown-heading" data-reveal>
+      <p class="script section__eyebrow" data-format="longDate"></p>
+      <h2 class="section__title" id="countdown-heading" data-text="countdown.heading"></h2>
+      <div class="divider" data-art="footprints"></div>
+      <div class="countdown" id="countdown" role="timer" aria-live="off">
+        <div class="countdown__tile"><span class="countdown__value" data-unit="days">00</span><span class="countdown__label">Days</span></div>
+        <div class="countdown__tile"><span class="countdown__value" data-unit="hours">00</span><span class="countdown__label">Hours</span></div>
+        <div class="countdown__tile"><span class="countdown__value" data-unit="mins">00</span><span class="countdown__label">Mins</span></div>
+        <div class="countdown__tile"><span class="countdown__value" data-unit="secs">00</span><span class="countdown__label">Secs</span></div>
+      </div>
+      <p class="countdown__done" id="countdown-done" data-text="countdown.doneMessage" hidden></p>
+    </section>
+
+    <div class="peek-row peek-row--left" data-art="peek:bunny" data-reveal></div>
+
+    <section class="section" aria-label="Our story" data-reveal>
+      <div class="divider" data-art="footprints"></div>
+      <figure class="photo-frame" id="cover"></figure>
+      <p class="story__text" data-text="story.text"></p>
+      <p class="script story__quote" data-text="story.quote"></p>
+    </section>
+
+    <div class="peek-row peek-row--right" data-art="peek:fox" data-reveal></div>
+
+    <section class="section" aria-labelledby="schedule-heading" data-reveal>
+      <p class="script section__eyebrow" data-text="schedule.eyebrow"></p>
+      <h2 class="section__title" id="schedule-heading" data-text="schedule.heading"></h2>
+      <div class="divider" data-art="footprints"></div>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section class="section" aria-labelledby="location-heading" data-reveal>
+      <h2 class="section__title" id="location-heading" data-text="location.heading"></h2>
+      <div class="divider" data-art="footprints"></div>
+      <div class="card map-card">
+        <span class="map-card__pin" data-art="icon:pin"></span>
+        <p class="map-card__name" data-text="location.name"></p>
+        <a class="button" id="maps-link" target="_blank" rel="noopener">
+          <span data-art="icon:navigate"></span>
+          <span data-text="location.buttonLabel"></span>
+          <span class="sr-only">(opens Google Maps in a new tab)</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="peek-row" data-art="peek:bear" data-reveal></div>
+
+    <section class="section" id="gallery-section" aria-labelledby="gallery-heading" data-reveal hidden>
+      <p class="script section__eyebrow" data-text="gallery.eyebrow"></p>
+      <h2 class="section__title" id="gallery-heading" data-text="gallery.heading"></h2>
+      <div class="divider" data-art="footprints"></div>
+      <ul class="gallery" id="gallery"></ul>
+    </section>
+
+    <footer class="closing" data-reveal>
+      <div class="closing__sprigs"><span data-art="sprig"></span><span data-art="sprig"></span></div>
+      <p class="script closing__quote" data-text="closing.quote"></p>
+      <p class="eyebrow closing__sign">&mdash; <span data-text="closing.signature"></span></p>
+    </footer>
+  </main>
+
+  <button class="music" id="music" type="button" aria-pressed="false" aria-label="Play music" hidden></button>
+  <audio id="audio" preload="none" loop></audio>
+
+  <script src="content.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
