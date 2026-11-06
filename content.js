@@ -99,5 +99,5 @@ window.INVITE = {
   // Soft music-box Brahms' Lullaby, made by tools/make_lullaby.py.
   // To use your own song instead: drop it in docs/media/ and change this path
   // (.mp3 or .m4a). Empty string = no music button.
-  music: "media/soft-piano.mp3",
+  music: "media/Tu_Hi_Re.mp3",
 };
