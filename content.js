@@ -28,7 +28,7 @@ window.INVITE = {
       "Join us for a baby shower celebrating",
     parents: ["Aditi", "Samay"],
     dueLabel: "Arriving December 2026",
-    hostedBy: "Hosted with love by the Dhanopya family",
+    hostedBy: "Hosted with love by the Dhanopya family (Dhowara wale)",
   },
 
   countdown: {
@@ -80,7 +80,7 @@ window.INVITE = {
 
   closing: {
     quote: "Little feet, big love",
-    signature: "Aditi & Samay",
+    signature: "Padma & Kapoor and the entire Dhanopya family (Dhowara wale) request your presence and blessings for their new arrival",
   },
 
   photos: {
